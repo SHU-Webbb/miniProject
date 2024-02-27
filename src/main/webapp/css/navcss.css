@@ -1,0 +1,41 @@
+@charset "EUC-KR";
+
+/* styles.css */
+
+nav {
+    background-color: #333; /* 네비게이션 배경색 */
+    padding: 10px;
+    text-align: center;
+}
+
+#toggleNavBtn {
+    background-color: #4285f4; /* 버튼 배경색 */
+    color: #fff; /* 버튼 텍스트 색상 */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* 버튼 라운드 적용 */
+}
+
+#navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navList li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#navList a {
+    text-decoration: none;
+    color: #fff; /* 링크 텍스트 색상 */
+    font-size: 16px;
+    transition: color 0.3s; /* 링크 색상 전환 효과 */
+}
+
+#navList a:hover {
+    color: #f0f0f0; /* 호버 시 링크 색상 변경 */
+}

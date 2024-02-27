@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* Reset some default styles */
+body, h1, h2, p, label, input, textarea, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #808080;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #808080;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+	  
+	  background-color: #808080;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+	
+	background-color: #0056b3;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.post-detail {
+    margin-top: 20px;
+}
+
+.post-detail img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.post-detail p {
+    line-height: 1.5;
+}
+
+.post-detail p, .post-detail img {
+    margin-bottom: 10px;
+}
+
+.post-detail p:last-child, .post-detail img:last-child {
+    margin-bottom: 0;
+}

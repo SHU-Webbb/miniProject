@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>MiniPj</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>INIT_PARAM</param-name>
+    <param-value>WEB.XML에 저장한 초기화 매개변수</param-value>
+  </context-param>
+  
+  <session-config>
+    <session-timeout>20</session-timeout>
+  </session-config>
+  <context-param>
+    <param-name>OracleDriver</param-name>
+    <param-value>oracle.jdbc.OracleDriver</param-value>
+  </context-param>
+  <context-param>
+    <param-name>OracleURL</param-name>
+    <param-value>jdbc:oracle:thin:@localhost:1521:XE</param-value>
+  </context-param>
+  <context-param>
+    <param-name>OracleId</param-name>
+    <param-value>mini_user</param-value>
+  </context-param>
+  <context-param>
+    <param-name>OraclePwd</param-name>
+    <param-value>ora123</param-value>
+  </context-param>
+  <servlet>
+		<servlet-name>PostLikesServlet</servlet-name>
+		<servlet-class>servlet.PostLikesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PostLikesServlet</servlet-name>
+		<url-pattern>/Post_Write_Edit/PostLikesServlet</url-pattern>
+	</servlet-mapping>
+  
+</web-app>
